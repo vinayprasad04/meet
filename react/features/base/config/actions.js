@@ -15,7 +15,7 @@ import {
 } from './actionTypes';
 import { _CONFIG_STORE_PREFIX } from './constants';
 import { setConfigFromURLParams } from './functions';
-
+import interfaceConfig from './../../../../interface_config';
 
 /**
  * Updates the config with new options.
@@ -99,9 +99,10 @@ export function overwriteConfig(config: Object) {
  * @returns {Function}
  */
 export function setConfig(config: Object = {}) {
+
     return (dispatch: Dispatch<any>, getState: Function) => {
         const { locationURL } = getState()['features/base/connection'];
-
+        {    console.log("locationURL vinay",locationURL);}
         // Now that the loading of the config was successful override the values
         // with the parameters passed in the hash part of the location URI.
         // TODO We're still in the middle ground between old Web with config,

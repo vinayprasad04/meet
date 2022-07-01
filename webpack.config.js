@@ -70,7 +70,9 @@ function devServerProxyBypass({ path }) {
             || path.startsWith('/lang/')
             || path.startsWith('/sounds/')
             || path.startsWith('/static/')
-            || path.endsWith('.wasm')) {
+            || path.endsWith('.wasm')
+            || path.endsWith('config.js')
+            || path.endsWith('interface_config.js')) {
 
         return path;
     }

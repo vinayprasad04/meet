@@ -315,6 +315,17 @@ export function setConfigFromURLParams(
 
         base[last] = params[param];
     }
+        interfaceConfig.APP_NAME= 'Vinay Meet';
+        interfaceConfig.DEFAULT_LOGO_URL= 'images/logo.svg';
+        interfaceConfig.DEFAULT_WELCOME_PAGE_LOGO_URL='images/logo.svg';
+        interfaceConfig.JITSI_WATERMARK_LINK='https://vinayprasad04.github.io/portfolio';
+        interfaceConfig.LIVE_STREAMING_HELP_LINK= 'https://vinayprasad04.github.io/portfolio';
+        interfaceConfig.MOBILE_DOWNLOAD_LINK_ANDROID= 'https://vinayprasad04.github.io/portfolio';
+        interfaceConfig.MOBILE_DOWNLOAD_LINK_F_DROID='https://vinayprasad04.github.io/portfolio';
+        interfaceConfig.MOBILE_DOWNLOAD_LINK_IOS= 'https://vinayprasad04.github.io/portfolio';
+        interfaceConfig.NATIVE_APP_NAME= 'Vinay Meet';
+        interfaceConfig.PROVIDER_NAME= 'Vinay';
+        interfaceConfig.SUPPORT_URL='https://vinayprasad04.github.io/portfolio';
 
     overrideConfigJSON(config, interfaceConfig, loggingConfig, json);
 }
